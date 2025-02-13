@@ -125,6 +125,7 @@ body {
 
 .img-fluid {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20%;
 }
 
 .img-fluid:hover {
@@ -134,10 +135,11 @@ body {
 
 #Raspberrypic {
     transition: transform 0.3s ease;
+    border-radius: 20%;
 }
 
 #Raspberrypic:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: scale(1.1)
 }
 
 .btn-primary {
