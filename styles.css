@@ -190,7 +190,7 @@ body {
 }
 
 .animate-left {
-    animation: slideInLeft 1s ease-in-out;
+    animation: slideInLeft 3s ease-in-out;
 }
 
 .animate-right {
