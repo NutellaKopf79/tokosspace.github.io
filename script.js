@@ -1,14 +1,13 @@
-function showSection(sectionId) {
+function show(id, triggerEl) {
     // Hide all sections
-    document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-    });
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
 
-    // Show the selected section
-    document.getElementById(sectionId).classList.add('active');
+    // Deactivate all nav links
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+
+    // Show the target section
+    document.getElementById(id).classList.add('active');
+
+    // Activate the clicked nav link
+    if (triggerEl) triggerEl.classList.add('active');
 }
-
-// Show only the home section on initial load
-document.addEventListener('DOMContentLoaded', () => {
-    showSection('home');
-});
